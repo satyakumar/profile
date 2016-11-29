@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    text-rendering: optimizeLegibility;
+}
+body {
+    background-color: #edeff5;
+    color: #FFF;
+    overflow-x: hidden;
+}
+section {
+    color: #000;
+    padding: 2% 0;
+}
+p {
+    line-height: 24px;
+}
+h4 {
+    text-align: center;
+}
+/*=====Genaral=====*/
+.fleft {
+    float: left;
+}
+.fright {
+    float: right;
+}
+.row {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+.row-2 {
+    margin: 0 12%;
+}
+h2 {
+    font-size: 176%;
+    letter-spacing: 2px;
+    margin-bottom: 2%;
+}
+.bottm-line {
+    margin-bottom: 2%;
+}
+.bottm-line:after {
+    content: "";
+    height: 6px;
+    width: 48px;
+    background-color: red;
+    display: block;
+}
+.social i {
+    font-size: 200%;
+    margin: 1%;
+}
+.download_resume {
+    font-size: 120%;
+    border: 1px solid #FFF;
+    padding: 1%;
+    margin-right: 4%;
+}
+.clearer { clear: both; }
+/*====Header=====*/
+header {
+    background-image: linear-gradient(rgba(121, 20, 20, 0.7),rgba(36, 117, 150, 0.61)), url(images/header.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+header nav {
+    position: fixed;
+    width: 100%;
+    right: 0%;
+    top: 5%;
+    z-index: 2;
+}
+header .fleft {
+    font-size: 152%;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-left: 3%;
+}
+#header-middle {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+}
+.person {
+    position: absolute;
+    top: 85%;
+    text-align: center;
+    width: 100%;
+}
+.person img {
+    border-radius: 50%;
+    border: 4px solid rgb(152,152,152);
+}
+#header-middle {
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+.name h1 {
+    font-size: 5em;
+    margin-bottom: 1%;
+}
+.qualification {
+    font-size: 125%;
+}
+/**====About-me section=*/
+#about-me {
+    padding: 8% 0 5% 0;
+}
+.arrow {
+    color: #000;
+}
+.arrow i {
+    font-size: 300%;
+}
+.arrow:after {
+    clear: both;
+}
+.ion-ios-arrow-thin-right {
+    float: right;
+}
+/*==Hobbies section==*/
+#hobbies {
+    background-color: rgba(46, 73, 117,5);
+}
+#list-hobbies div{
+    background-color: rgb(119, 140, 173);
+    border-radius: 50%;
+    height: 147px;
+    position: relative;
+}
+#list-hobbies i {
+    font-size: 250%;
+    position: absolute;
+    top: 36%;
+    left: 39%;
+}
+#list-hobbies span {
+    position: absolute;
+    top: 107%;
+    left: 35%;
+    color: #FFF;
+}
+/*==Education section==*/
+#education {
+    background-color: rgba(152, 152, 152,2);
+}
+#experience {
+    background-color: rgba(105, 128, 165,2);
+}
+#education .col p:nth-child(2),#experience .col p:nth-child(2) {
+    margin-bottom: 5%;
+    color: #555;
+    font-weight: bold;
+}
+#education .col p:nth-child(3),#experience .col p:nth-child(3) {
+    font-size: 85%;
+}
+/*==Skills section==*/
+#skills .col {
+    height: 284px;
+    margin: 0;
+    position: relative;
+}
+#skills .col div {
+    position: absolute;
+    top: 42%;
+    left: 34%;
+}
+#skill-one .col:nth-child(1),#skill-one .col:nth-child(3),#skill-two .col:nth-child(2) {
+    background-color: rgb(105, 128, 165);
+}
+#skill-one .col:nth-child(2),#skill-two .col:nth-child(1),#skill-two .col:nth-child(3){
+    background-color: rgb(189, 215, 255);
+}
+/*==contact section ==*/
+#contact .col {
+    margin: 0;
+}
+#contact .bottm-line {
+    margin-bottom: 5%;
+}
+#address {
+    background-color: #2e4975;
+    padding: 5% 12%;
+    color: #FFF;
+}
+#address .span-1-of-3 {
+    font-weight: bold;
+}
+#feedback {
+    background-color: #bbc8dd;
+    padding: 5% 3% 1% 3%;
+    width: 50.8%;
+}
+#feedback #form {
+    width: 74%;
+}
+input,textarea {
+    background: #bbc8dd;
+    border: none;
+    border-bottom: 1px solid #2e4975;
+    outline: none;
+    margin: 5% 0;
+}
+#subject input, textarea {
+    width: 95%;
+}
+label {
+    display: block;
+}
+/*==Footer==*/
+footer {
+    color: #000;
+}
+footer .download_resume {
+    text-align: center;
+    border-color: #000;
+}
+footer .copyright {
+    font-size: 71%;
+    margin-top: 2%;
+}
+/*==Media Queries==*/
+@media only screen and (max-width:480px) {
+    #header-middle {
+        top: 12%;
+    }
+    #about-me {
+        margin-top: 40%;
+    }
+    #hobbies .col {
+        margin-bottom: 16%;
+    }
+    #skills .col {
+        padding: 50% 0;
+    }
+    #feedback {
+        width: 100%;
+    }
+    #experience .col,#education .col {
+        margin: 3% 0;
+    }
+    #list-hobbies div {
+        width: 48%;
+        margin: 0 1%;
+    }
+
+}
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+     #about-me {
+        margin-top: 7%;;
+    }
+    #hobbies {
+        padding-bottom: 5%
+    }
+    #list-hobbies div {
+        height: 97px;
+    }
+    #list-hobbies i {
+        top: 31%;
+        left: 33%;
+    }
+    #skills .col {
+        height: 200px;
+    }
+    #skills .col div {
+        left: 20%;
+    }
+    #address .span-1-of-3 {
+        margin-right: 6%;
+    }
+}
